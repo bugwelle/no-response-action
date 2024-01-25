@@ -22,12 +22,17 @@ name: No Response
 # Both `issue_comment` and `scheduled` event types are required for this Action
 # to work properly.
 on:
+  workflow_dispatch:
   issue_comment:
     types: [created]
   schedule:
-    # Schedule for five minutes after the hour, every hour
-    - cron: '5 * * * *'
+    # Schedule for five minutes after the hour, every Sunday
+    - cron: '5 * * * 0'
 
+# Required for the action to write comments.
+permissions:
+  issues: write
+  
 jobs:
   noResponse:
     runs-on: ubuntu-latest
