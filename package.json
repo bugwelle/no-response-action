@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lee-dohm/no-response.git"
+    "url": "git+https://github.com/bugwelle/no-response-action.git"
   },
   "keywords": [
     "actions",

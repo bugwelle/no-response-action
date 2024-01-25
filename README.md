@@ -2,6 +2,16 @@
 
 A GitHub Action that closes Issues where the author hasn't responded to a request for more information.
 
+## Notes on this fork
+
+This is a fork of [no-response](https://github.com/lee-dohm/no-response) by lee-dohm.
+Because that project is inactive, I've decided to fork the project.
+Most changes in this project are open as a PR in lee-dohm/no-response (see [here](https://github.com/lee-dohm/no-response/pull/410)).
+
+Notable changes:
+
+- `dist/` contains the latest build artifact, so you can use `@main`
+
 ## Use
 
 Recommended basic configuration:
@@ -22,7 +32,7 @@ jobs:
   noResponse:
     runs-on: ubuntu-latest
     steps:
-      - uses: lee-dohm/no-response@v0.5.0
+      - uses: bugwelle/no-response@main
         with:
           token: ${{ github.token }}
 ```
