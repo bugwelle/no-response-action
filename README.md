@@ -32,7 +32,7 @@ on:
 # Required for the action to write comments.
 permissions:
   issues: write
-  
+
 jobs:
   noResponse:
     runs-on: ubuntu-latest
