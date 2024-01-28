@@ -37,7 +37,7 @@ jobs:
   noResponse:
     runs-on: ubuntu-latest
     steps:
-      - uses: bugwelle/no-response@main
+      - uses: bugwelle/no-response-action@main
         with:
           token: ${{ github.token }}
 ```

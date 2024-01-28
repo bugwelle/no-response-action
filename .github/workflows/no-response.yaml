@@ -19,7 +19,7 @@ jobs:
     name: No Response Check
     runs-on: ubuntu-latest
     steps:
-      - uses: bugwelle/no-response@main
+      - uses: bugwelle/no-response-action@main
         with:
           daysUntilClose: 14
           closeComment: >
