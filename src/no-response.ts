@@ -101,7 +101,7 @@ export default class NoResponse {
         name: this.config.responseRequiredLabel,
         ...this.config.repo
       })
-    } catch (e) {
+    } catch {
       await this.octokit.rest.issues.createLabel({
         name: this.config.responseRequiredLabel,
         color: this.config.responseRequiredColor,
@@ -176,6 +176,7 @@ export default class NoResponse {
     })
 
     const allIssues: (RestIssue | null)[] = await Promise.all(closableIssuesPromises)
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
     const closableIssues = allIssues.filter((val) => val !== null) as RestIssue[]
     core.debug(`Closeable: ${JSON.stringify(closableIssues, null, 2)}`)
 
