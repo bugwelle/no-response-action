@@ -30035,6 +30035,7 @@ function run() {
         }
     });
 }
+// eslint-disable-next-line @typescript-eslint/no-floating-promises
 run();
 
 
@@ -30081,7 +30082,6 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const core = __importStar(__nccwpck_require__(7484));
 const fs = __importStar(__nccwpck_require__(9896));
 const github = __importStar(__nccwpck_require__(3228));
-/* eslint-enable */
 const fsp = fs.promises;
 class NoResponse {
     constructor(config) {
