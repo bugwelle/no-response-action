@@ -5,9 +5,7 @@ import * as github from '@actions/github'
 import Config from './config'
 import { GitHub } from '@actions/github/lib/utils'
 
-/* eslint-disable import/no-unresolved */
 import { IssueCommentEvent } from '@octokit/webhooks-types'
-/* eslint-enable */
 
 const fsp = fs.promises
 
@@ -196,7 +194,7 @@ export default class NoResponse {
 
     const text = (await fsp.readFile(process.env.GITHUB_EVENT_PATH)).toString()
 
-    return JSON.parse(text)
+    return JSON.parse(text) as IssueCommentEvent
   }
 
   since(days: number): Date {
