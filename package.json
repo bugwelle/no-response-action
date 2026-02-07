@@ -25,16 +25,16 @@
   "author": "lee-dohm",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^2.0.0",
-    "@actions/github": "^7.0.0"
+    "@actions/core": "^3.0.0",
+    "@actions/github": "^9.0.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.1",
+    "@eslint/js": "^10.0.0",
     "@octokit/webhooks-types": "^7.6.1",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.10.1",
     "@vercel/ncc": "^0.38.4",
-    "eslint": "^9.39.1",
+    "eslint": "^10.0.0",
     "eslint-plugin-github": "^6.0.0",
     "eslint-plugin-jest": "^29.1.0",
     "extract-pr-titles": "^1.1.0",
